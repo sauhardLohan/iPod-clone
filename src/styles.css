@@ -1,0 +1,194 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+audio {
+  width: 100%;
+  height: 100%;
+}
+/* making the display of volume button in audio none  */
+audio::-webkit-media-controls-mute-button {
+  display: none !important;
+}
+/* increasing the width of audio timeline  */
+audio::-webkit-media-controls-timeline {
+  width: 500px !important;
+}
+/* making the display of play pause button in audio none  */
+audio::-webkit-media-controls-play-button {
+  display: none;
+}
+/* increasing the right margin of time remaining display of audio  */
+audio::-webkit-media-controls-time-remaining-display {
+  margin-right: 20px;
+}
+
+/* Main IPod body  */
+#App {
+  width: 320px;
+  height: 500px;
+  background-color: rgb(218, 218, 218);
+  margin: auto;
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  border-radius: 30px;
+
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: rgba(69, 68, 68, 0.25) 0px 30px 60px 40px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px 18px inset;
+
+  display: flex;
+  -webkit-box-reflect: below 10px
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+
+/* Div containing screen and controls body    */
+#main-body {
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+/*         Screen section at top           */
+#screen {
+  width: 100%;
+  height: 50%;
+  border: 4px solid black;
+  box-sizing: border-box;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: whitesmoke;
+}
+#screen > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+/* Screen left side for menu  */
+#screen #left-side {
+  width: 50%;
+  padding: 20px 0.8rem 10px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+#screen #left-side p {
+  font-size: 1.3rem;
+  text-align: justify;
+  margin: 4px 0 8px 0;
+  font-weight: 500;
+  padding-left: 6px;
+}
+#screen #left-side button {
+  width: 100%;
+  padding: 8px;
+  text-align: start;
+  display: inline-flex;
+}
+#menu-heading {
+  width: 90%;
+}
+/* Different menu items  */
+#screen #left-side button {
+  position: relative;
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  width: 100%;
+}
+#menu-items button {
+  display: inline-flex;
+  justify-content: space-between;
+}
+/* Screen right side for image background  */
+#screen #right-side {
+  width: 50%;
+  background-image: url(https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067__340.png);
+  background-size: cover;
+  background-position-x: center;
+  display: inline-block;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/*          Controls section at bottom         */
+#controls {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+/* Controls menu or the wheel section  */
+#controls #controls-menu {
+  width: 180px;
+  height: 180px;
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  overflow: hidden;
+}
+/* different controls in controls menu like menu,next,prev,play-pause button  */
+#controls #controls-menu .control-list {
+  position: absolute;
+
+  height: 46px;
+  background: none;
+  color: inherit;
+  border: none;
+
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+/* image for different controls   */
+#controls #controls-menu .control-list img {
+  width: 30px;
+  height: 30px;
+}
+/* create forward icon by rotating backward icon   */
+#controls #controls-menu .control-list #forward {
+  transform: rotate(180deg);
+}
+/* selection button  */
+#controls #inner-button {
+  width: 90px;
+  height: 90px;
+  border: none;
+  background-color: rgb(169, 169, 169);
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  left: 35.3%;
+}
