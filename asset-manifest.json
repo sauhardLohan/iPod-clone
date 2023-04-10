@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/ipod-clone/static/css/main.c33609bc.css",
+    "main.js": "/ipod-clone/static/js/main.1ceb0d46.js",
+    "static/media/Kesariya.mp3": "/ipod-clone/static/media/Kesariya.b5aa1578e2ad4183ede5.mp3",
+    "static/media/cheapThrills.mp3": "/ipod-clone/static/media/cheapThrills.8a9c19165dfbbcec8296.mp3",
+    "static/media/edm.mp3": "/ipod-clone/static/media/edm.97c996a4ca1bc6ffa022.mp3",
+    "static/media/kesariyaCover.png": "/ipod-clone/static/media/kesariyaCover.92f79ae317e29e18fb95.png",
+    "static/media/cheapThrillsCover.png": "/ipod-clone/static/media/cheapThrillsCover.9f840bd502a31197ebf0.png",
+    "static/media/Cover.png": "/ipod-clone/static/media/Cover.8383d45fc0d2e625d588.png",
+    "index.html": "/ipod-clone/index.html",
+    "main.c33609bc.css.map": "/ipod-clone/static/css/main.c33609bc.css.map",
+    "main.1ceb0d46.js.map": "/ipod-clone/static/js/main.1ceb0d46.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c33609bc.css",
+    "static/js/main.1ceb0d46.js"
+  ]
+}
